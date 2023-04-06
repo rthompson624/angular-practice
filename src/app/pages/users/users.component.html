@@ -1,1 +1,18 @@
-<p>users works!</p>
+<div *ngFor="let user of users$ | async" style="margin-top: 10px;">
+  <div style="display: flex;">
+    <div style="font-weight: bold;">ID</div>
+    <div style="margin-left: 10px;">{{user.id}}</div>
+  </div>
+  <div style="display: flex;">
+    <div style="font-weight: bold;">Name</div>
+    <div style="margin-left: 10px;">{{user.name}}</div>
+  </div>
+  <div style="display: flex;">
+    <div style="font-weight: bold;">Phone</div>
+    <div style="margin-left: 10px;">{{user.phone}}</div>
+  </div>
+  <div style="display: flex;">
+    <div style="font-weight: bold;">City</div>
+    <div style="margin-left: 10px;">{{user.address.city}}</div>
+  </div>
+</div>
