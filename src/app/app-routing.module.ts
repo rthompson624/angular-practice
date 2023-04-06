@@ -6,6 +6,7 @@ import { PostsComponent } from './pages/posts/posts.component';
 const ROUTES: Route[] = [
   { path: 'users', component: UsersComponent },
   { path: 'posts', component: PostsComponent },
+  { path: 'albums', loadChildren: () => import('./albums/albums.module').then(m => m.AlbumsModule) },
 ];
 
 @NgModule({
