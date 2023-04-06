@@ -1,0 +1,71 @@
+<div *ngIf="(user$ | async) as user">
+  <div style="display: flex; margin-top: 10px;">
+    <div style="font-weight: bold; margin-right: 10px;">ID</div>
+    <div>{{user.id}}</div>
+  </div>
+  <div style="display: flex; margin-top: 10px;">
+    <div style="font-weight: bold; margin-right: 10px;">Name</div>
+    <div>{{user.name}}</div>
+  </div>
+  <div style="display: flex; margin-top: 10px;">
+    <div style="font-weight: bold; margin-right: 10px;">Username</div>
+    <div>{{user.username}}</div>
+  </div>
+  <div style="display: flex; margin-top: 10px;">
+    <div style="font-weight: bold; margin-right: 10px;">Email</div>
+    <div>{{user.email}}</div>
+  </div>
+  <div style="margin-left: 20px;">
+    <div style="font-style: italic; margin-top: 10px;">Address</div>
+    <div style="display: flex; margin-top: 10px;">
+      <div style="font-weight: bold; margin-right: 10px;">Street</div>
+      <div>{{user.address.street}}</div>
+    </div>
+    <div style="display: flex; margin-top: 10px;">
+      <div style="font-weight: bold; margin-right: 10px;">Suite</div>
+      <div>{{user.address.suite}}</div>
+    </div>
+    <div style="display: flex; margin-top: 10px;">
+      <div style="font-weight: bold; margin-right: 10px;">City</div>
+      <div>{{user.address.city}}</div>
+    </div>
+    <div style="display: flex; margin-top: 10px;">
+      <div style="font-weight: bold; margin-right: 10px;">Zip Code</div>
+      <div>{{user.address.zipcode}}</div>
+    </div>
+    <div style="margin-left: 20px;">
+      <div style="font-style: italic; margin-top: 10px;">Geo</div>
+      <div style="display: flex; margin-top: 10px;">
+        <div style="font-weight: bold; margin-right: 10px;">Latitude</div>
+        <div>{{user.address.geo.lat}}</div>
+      </div>
+      <div style="display: flex; margin-top: 10px;">
+        <div style="font-weight: bold; margin-right: 10px;">Longitude</div>
+        <div>{{user.address.geo.lng}}</div>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; margin-top: 10px;">
+    <div style="font-weight: bold; margin-right: 10px;">Phone</div>
+    <div>{{user.phone}}</div>
+  </div>
+  <div style="display: flex; margin-top: 10px;">
+    <div style="font-weight: bold; margin-right: 10px;">Website</div>
+    <div>{{user.website}}</div>
+  </div>
+  <div style="margin-left: 20px;">
+    <div style="font-style: italic; margin-top: 10px;">Company</div>
+    <div style="display: flex; margin-top: 10px;">
+      <div style="font-weight: bold; margin-right: 10px;">Name</div>
+      <div>{{user.company.name}}</div>
+    </div>
+    <div style="display: flex; margin-top: 10px;">
+      <div style="font-weight: bold; margin-right: 10px;">Catch Phrase</div>
+      <div>{{user.company.catchPhrase}}</div>
+    </div>
+    <div style="display: flex; margin-top: 10px;">
+      <div style="font-weight: bold; margin-right: 10px;">BS</div>
+      <div>{{user.company.bs}}</div>
+    </div>
+  </div>
+</div>

@@ -13,4 +13,8 @@ export class ApiService {
   getAllUsers() {
     return this.http.get<User[]>(`${this.apiUrl}/users`);
   }
+
+  getUserById(id: number) {
+    return this.http.get<User>(`${this.apiUrl}/users/${id}`);
+  }
 }
