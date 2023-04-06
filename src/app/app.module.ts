@@ -7,13 +7,15 @@ import { UsersComponent } from './pages/users/users.component';
 import { PostsComponent } from './pages/posts/posts.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserViewComponent } from './pages/user-view/user-view.component';
+import { UserEditComponent } from './pages/user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     PostsComponent,
-    UserViewComponent
+    UserViewComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,

@@ -3,8 +3,10 @@ import { Route, RouterModule } from '@angular/router';
 import { UsersComponent } from './pages/users/users.component';
 import { PostsComponent } from './pages/posts/posts.component';
 import { UserViewComponent } from './pages/user-view/user-view.component';
+import { UserEditComponent } from './pages/user-edit/user-edit.component';
 
 const ROUTES: Route[] = [
+  { path: 'users/:id/edit', component: UserEditComponent },
   { path: 'users/:id', component: UserViewComponent },
   { path: 'users', component: UsersComponent },
   { path: 'posts', component: PostsComponent },

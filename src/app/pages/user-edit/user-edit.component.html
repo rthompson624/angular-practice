@@ -1,0 +1,42 @@
+<div [formGroup]="form" style="display: flex; flex-direction: column;">
+  <div style="margin-top: 10px;">ID: {{form.controls.id.value}}</div>
+  <label style="margin-top: 10px;">Name</label>
+  <input type="text" formControlName="name" style="width: 300px;">
+  <label style="margin-top: 10px;">Username</label>
+  <input type="text" formControlName="username" style="width: 300px;">
+  <label style="margin-top: 10px;">Email</label>
+  <input type="text" formControlName="email" style="width: 300px;">
+  <div style="display: flex; flex-direction: column; margin-left: 20px;" formGroupName="address">
+    <label style="margin-top: 10px;">Street</label>
+    <input type="text" formControlName="street" style="width: 300px;">
+    <label style="margin-top: 10px;">Suite</label>
+    <input type="text" formControlName="suite" style="width: 300px;">
+    <label style="margin-top: 10px;">city</label>
+    <input type="text" formControlName="city" style="width: 300px;">
+    <label style="margin-top: 10px;">Zip Code</label>
+    <input type="text" formControlName="zipcode" style="width: 300px;">
+    <div style="display: flex; flex-direction: column; margin-left: 20px;" formGroupName="geo">
+      <label style="margin-top: 10px;">Latitude</label>
+      <input type="text" formControlName="lat" style="width: 300px;">
+      <label style="margin-top: 10px;">Longitude</label>
+      <input type="text" formControlName="lng" style="width: 300px;">
+    </div>
+  </div>
+  <label style="margin-top: 10px;">Phone</label>
+  <input type="text" formControlName="phone" style="width: 300px;">
+  <label style="margin-top: 10px;">Website</label>
+  <input type="text" formControlName="website" style="width: 300px;">
+  <div style="display: flex; flex-direction: column; margin-left: 20px;" formGroupName="company">
+    <label style="margin-top: 10px;">Company Name</label>
+    <input type="text" formControlName="name" style="width: 300px;">
+    <label style="margin-top: 10px;">Catch Phrase</label>
+    <input type="text" formControlName="catchPhrase" style="width: 300px;">
+    <label style="margin-top: 10px;">BS</label>
+    <input type="text" formControlName="bs" style="width: 300px;">
+  </div>
+</div>
+<button (click)="update()" style="margin-top: 20px; cursor: pointer;">Update</button>
+<div *ngIf="submitError" style="font-weight: bold; color: red; margin-top: 10px;">An error was encountered attempting to
+  update the record.
+  Please try again.
+</div>

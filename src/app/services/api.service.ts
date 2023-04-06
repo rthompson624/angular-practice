@@ -17,4 +17,8 @@ export class ApiService {
   getUserById(id: number) {
     return this.http.get<User>(`${this.apiUrl}/users/${id}`);
   }
+
+  updateUser(user: User) {
+    return this.http.put<User>(`${this.apiUrl}/users/${user.id}`, JSON.stringify(user), { headers: { 'Content-type': 'application/json; charset=UTF-8' } });
+  }
 }

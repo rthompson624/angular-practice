@@ -1,4 +1,7 @@
 <div *ngIf="(user$ | async) as user">
+  <div style="margin-top: 10px;">
+    <a routerLink="/users/{{user.id}}/edit">Edit Record</a>
+  </div>
   <div style="display: flex; margin-top: 10px;">
     <div style="font-weight: bold; margin-right: 10px;">ID</div>
     <div>{{user.id}}</div>
