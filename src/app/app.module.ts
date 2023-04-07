@@ -12,6 +12,7 @@ import { SpecialButtonComponent } from './components/special-button/special-butt
 import { BirdIsTheWordPipe } from './pipes/bird-is-the-word.pipe';
 import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
 import { NavHoverDirective } from './directives/nav-hover.directive';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NavHoverDirective } from './directives/nav-hover.directive';
     SpecialButtonComponent,
     BirdIsTheWordPipe,
     TopNavBarComponent,
-    NavHoverDirective
+    NavHoverDirective,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
