@@ -10,6 +10,7 @@ import { UserViewComponent } from './pages/user-view/user-view.component';
 import { UserEditComponent } from './pages/user-edit/user-edit.component';
 import { SpecialButtonComponent } from './components/special-button/special-button.component';
 import { BirdIsTheWordPipe } from './pipes/bird-is-the-word.pipe';
+import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BirdIsTheWordPipe } from './pipes/bird-is-the-word.pipe';
     UserViewComponent,
     UserEditComponent,
     SpecialButtonComponent,
-    BirdIsTheWordPipe
+    BirdIsTheWordPipe,
+    TopNavBarComponent
   ],
   imports: [
     BrowserModule,

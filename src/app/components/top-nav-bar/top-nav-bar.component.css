@@ -1,0 +1,13 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid cornflowerblue;
+  cursor: pointer;
+  text-align: center;
+}
