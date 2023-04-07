@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UsersComponent } from './pages/users/users.component';
@@ -13,6 +13,7 @@ import { BirdIsTheWordPipe } from './pipes/bird-is-the-word.pipe';
 import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
 import { NavHoverDirective } from './directives/nav-hover.directive';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { RequestLoggerInterceptor } from './interceptors/request-logger.interceptor';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: RequestLoggerInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
