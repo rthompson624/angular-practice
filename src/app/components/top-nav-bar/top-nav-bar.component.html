@@ -1,3 +1,4 @@
 <div class="nav-bar">
-  <div *ngFor="let navItem of navItems" routerLink="{{navItem.url}}" class="nav-item">{{navItem.title}}</div>
+  <div *ngFor="let navItem of navItems" routerLink="{{navItem.url}}" class="nav-item" appNavHover>{{navItem.title}}
+  </div>
 </div>

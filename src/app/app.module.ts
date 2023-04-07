@@ -11,6 +11,7 @@ import { UserEditComponent } from './pages/user-edit/user-edit.component';
 import { SpecialButtonComponent } from './components/special-button/special-button.component';
 import { BirdIsTheWordPipe } from './pipes/bird-is-the-word.pipe';
 import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
+import { NavHoverDirective } from './directives/nav-hover.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.compone
     UserEditComponent,
     SpecialButtonComponent,
     BirdIsTheWordPipe,
-    TopNavBarComponent
+    TopNavBarComponent,
+    NavHoverDirective
   ],
   imports: [
     BrowserModule,
