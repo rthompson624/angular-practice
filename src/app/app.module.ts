@@ -8,6 +8,7 @@ import { PostsComponent } from './pages/posts/posts.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { UserViewComponent } from './pages/user-view/user-view.component';
 import { UserEditComponent } from './pages/user-edit/user-edit.component';
+import { SpecialButtonComponent } from './components/special-button/special-button.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserEditComponent } from './pages/user-edit/user-edit.component';
     UsersComponent,
     PostsComponent,
     UserViewComponent,
-    UserEditComponent
+    UserEditComponent,
+    SpecialButtonComponent
   ],
   imports: [
     BrowserModule,

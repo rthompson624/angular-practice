@@ -35,7 +35,7 @@
     <input type="text" formControlName="bs" style="width: 300px;">
   </div>
 </div>
-<button (click)="update()" style="margin-top: 20px; cursor: pointer;">Update</button>
+<app-special-button title="Update" (buttonClick)="update()"></app-special-button>
 <div *ngIf="submitError" style="font-weight: bold; color: red; margin-top: 10px;">An error was encountered attempting to
   update the record.
   Please try again.
