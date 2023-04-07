@@ -19,6 +19,6 @@ export class ApiService {
   }
 
   updateUser(user: User) {
-    return this.http.put<User>(`${this.apiUrl}/users/${user.id}`, JSON.stringify(user), { headers: { 'Content-type': 'application/json; charset=UTF-8' } });
+    return this.http.put<User>(`${this.apiUrl}/users/${user.id}`, user, { headers: { 'Content-type': 'application/json; charset=UTF-8' } });
   }
 }
