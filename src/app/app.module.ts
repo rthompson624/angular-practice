@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { UserViewComponent } from './pages/user-view/user-view.component';
 import { UserEditComponent } from './pages/user-edit/user-edit.component';
 import { SpecialButtonComponent } from './components/special-button/special-button.component';
+import { BirdIsTheWordPipe } from './pipes/bird-is-the-word.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SpecialButtonComponent } from './components/special-button/special-butt
     PostsComponent,
     UserViewComponent,
     UserEditComponent,
-    SpecialButtonComponent
+    SpecialButtonComponent,
+    BirdIsTheWordPipe
   ],
   imports: [
     BrowserModule,
